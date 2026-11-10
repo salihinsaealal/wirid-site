@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wirid: remote tasbih counter</title>
+<meta name="description" content="Wirid is a dhikr counter for Android that works with a small Bluetooth remote, screen off, phone in your pocket.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header><img src="icon.png" alt=""><h1>Wirid</h1></header>
+  <p class="lead">A tasbih counter for Android that works with a small Bluetooth remote. Keep the phone in your pocket, screen off, and count each dhikr with a press of a button.</p>
+  <nav><a href="#remote">Which remote?</a><a href="#start">Getting started</a><a href="#help">Help</a><a href="privacy.html">Privacy</a><a href="#ms">Bahasa Melayu</a></nav>
+
+  <h2 id="remote">Which remote do I need?</h2>
+  <div class="card">
+    <p><strong>Best:</strong> a small 2-button Bluetooth "page turner" remote, the kind sold for scrolling TikTok, reading e-books or taking photos, that <strong>changes the phone's volume</strong> when you press it.</p>
+    <ul>
+      <li><strong>Tested with:</strong> HanLinYue Free2. Any similar 2-button remote that sends Volume Up / Volume Down should work.</li>
+      <li><strong>Usually works with the screen on:</strong> page turners that send arrow keys or Page Up / Page Down.</li>
+      <li><strong>Not suitable:</strong> 1-button camera shutters, full keyboards, and remotes that need a USB dongle instead of Bluetooth.</li>
+    </ul>
+    <p class="muted">Check a remote before you rely on it: in Wirid, open Settings → Advanced → Keypad setup &amp; test. Each press shows up live.</p>
+  </div>
+  <div class="card gold">
+    <p><strong>No remote?</strong> Tap the screen to count, or turn on Settings → Advanced → "Count with the phone's volume buttons".</p>
+  </div>
+
+  <h2 id="start">Getting started</h2>
+  <ol>
+    <li>Pair the remote with your phone in Android's Bluetooth settings.</li>
+    <li>Open Wirid and tap <strong>Counting service is off</strong>. Read the explanation, tap <strong>Agree and continue</strong>, then turn on Wirid in Android's Accessibility settings. This lets Wirid hear the remote's buttons with the screen off. It never reads your screen.</li>
+    <li>Set the battery to <strong>Unrestricted</strong> (Settings → status card → Battery: unrestricted → Turn on, then Battery → Unrestricted), so Android doesn't stop counting in your pocket.</li>
+    <li>Press the remote's bottom button. The first press from a new remote is remembered as your keypad, and every press counts +1.</li>
+  </ol>
+  <h3>The two buttons</h3>
+  <ul>
+    <li><strong>Bottom (▼):</strong> +1.</li>
+    <li><strong>Top twice, then bottom N times:</strong> start routine N.</li>
+    <li><strong>Top three times:</strong> end the session.</li>
+    <li>A single top press does nothing, so it's a safe way to wake the phone.</li>
+    <li>Swap the buttons in Keypad setup &amp; test if your remote is the other way round.</li>
+  </ul>
+
+  <h2 id="help">Help</h2>
+  <h3>A press didn't count just as the screen turned off</h3>
+  <p>Android sometimes drops the press that wakes the phone at that exact moment. Press the top button once to wake it (a single top press is ignored), then count with the bottom button.</p>
+  <h3>Counting stopped in my pocket</h3>
+  <p>Check that the battery is set to Unrestricted, and that the counting service is still on (Android turns it off after a reinstall).</p>
+  <h3>Prayer times are for the wrong place</h3>
+  <p>Wirid finds your JAKIM zone from your location each time you open it. You can also choose the zone in Settings. Prayer times cover Malaysia only for now.</p>
+  <h3>Contact</h3>
+  <p>Email <a href="mailto:salihin.utem@gmail.com">salihin.utem@gmail.com</a>.</p>
+
+  <hr>
+  <h2 id="ms">Bahasa Melayu</h2>
+  <p class="lead">Tasbih digital untuk Android yang berfungsi dengan remote Bluetooth kecil. Simpan telefon dalam poket, skrin tertutup, dan kira setiap zikir dengan satu tekanan butang.</p>
+  <div class="card">
+    <p><strong>Remote yang paling sesuai:</strong> remote Bluetooth 2 butang jenis "page turner" (untuk scroll TikTok, membaca e-book atau mengambil gambar) yang <strong>menukar volume telefon</strong> apabila ditekan.</p>
+    <ul>
+      <li><strong>Telah diuji dengan:</strong> HanLinYue Free2.</li>
+      <li><strong>Biasanya berfungsi ketika skrin terbuka:</strong> page turner yang menghantar kekunci anak panah atau Page Up / Page Down.</li>
+      <li><strong>Tidak sesuai:</strong> remote kamera 1 butang, papan kekunci penuh, dan remote yang memerlukan dongle USB.</li>
+    </ul>
+    <p class="muted">Uji remote anda di Settings → Advanced → Keypad setup &amp; test. Tiada remote? Ketik skrin, atau hidupkan "Count with the phone's volume buttons".</p>
+  </div>
+  <p><strong>Petua:</strong> jika tekanan tidak dikira sejurus selepas skrin padam, tekan butang atas sekali untuk menghidupkan telefon, kemudian kira dengan butang bawah.</p>
+  <p>Hubungi: <a href="mailto:salihin.utem@gmail.com">salihin.utem@gmail.com</a> · <a href="privacy.html#ms">Dasar privasi</a></p>
+
+  <p class="muted" style="margin-top:40px">Prayer times: JAKIM, via waktusolat.app. Wirid is a personal project and is not affiliated with JAKIM or with any remote maker.</p>
+</main>
+</body>
+</html>

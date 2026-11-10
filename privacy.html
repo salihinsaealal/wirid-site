@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wirid privacy policy</title>
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header><img src="icon.png" alt=""><h1>Privacy policy</h1></header>
+  <p class="muted">Wirid for Android · Effective 10 November 2026 · <a href="#ms">Bahasa Melayu</a> · <a href="./">Back to Wirid</a></p>
+
+  <div class="card"><p class="lead" style="margin:0">Short version: no account, no ads, no tracking. Your counts stay on your phone. The only things that leave it are your approximate location, sent to look up your prayer zone, and your statistics, sent to your own Home Assistant only if you set that up.</p></div>
+
+  <h2>What stays on your phone</h2>
+  <p>Your dhikr counts, sessions, routines, goals and settings are stored in the app's private storage on your phone. The developer never receives them. Uninstalling the app deletes them. Settings → Advanced → Delete all sessions deletes them too.</p>
+  <p>Backups (Settings → Advanced → Back up data) are a file saved to a place <strong>you</strong> choose, such as your phone's storage or Google Drive. Wirid does not upload them anywhere itself.</p>
+
+  <h2>Location</h2>
+  <p>If you allow location, Wirid reads your <strong>approximate</strong> location when you open the app and sends the coordinates to <a href="https://waktusolat.app">waktusolat.app</a>, a third-party prayer-time service, to find your JAKIM prayer zone. It then downloads that zone's prayer times. Wirid does not use precise location or track your location in the background. You can turn this off in Settings ("Find zone from location") or deny the permission and choose your zone by hand. Waktusolat.app's own privacy practices apply to the requests it receives.</p>
+
+  <h2>Accessibility service</h2>
+  <p>Wirid's counting service uses Android's Accessibility API for one purpose: to receive the button presses of your Bluetooth remote, and the phone's volume buttons if you turn that option on, so it can count while the screen is off. It does <strong>not</strong> read the screen, the contents of other apps, or what you type. It collects nothing and sends nothing. Wirid asks for your agreement on a separate screen before you turn it on. You can turn it off any time in Android's Accessibility settings.</p>
+
+  <h2>Home Assistant (optional)</h2>
+  <p>If you enter a Home Assistant webhook address in Settings → Home Assistant, Wirid sends your <strong>statistics</strong> to that address: totals per dhikr, per prayer time and per period, streaks, the last 14 days and the app version. It sends no location or names of people. This goes only to the server you choose, usually your own home server. If you enter a plain <code>http://</code> address, that data is not encrypted in transit. Remove the address to stop sending.</p>
+
+  <h2>What Wirid does not do</h2>
+  <ul>
+    <li>No account or sign-in.</li>
+    <li>No advertising, analytics or crash-reporting services.</li>
+    <li>No selling or sharing of your data for advertising.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Accessibility (counting service):</strong> remote button presses, as above.</li>
+    <li><strong>Approximate location:</strong> finding your prayer zone, as above.</li>
+    <li><strong>Notifications:</strong> the live count and optional prayer-time alarms.</li>
+    <li><strong>Alarms and reminders:</strong> prayer-time alarms on time.</li>
+    <li><strong>Nearby devices (Bluetooth):</strong> to buzz when your remote connects.</li>
+    <li><strong>Internet:</strong> prayer times, and Home Assistant if you set it up.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Wirid is not directed at children under 13 and collects no personal information from anyone.</p>
+
+  <h2>Changes and contact</h2>
+  <p>Any change to this policy is posted on this page with a new effective date. Questions: <a href="mailto:salihin.utem@gmail.com">salihin.utem@gmail.com</a>.</p>
+
+  <hr>
+  <h2 id="ms">Dasar privasi (Bahasa Melayu)</h2>
+  <p class="muted">Berkuat kuasa 10 November 2026</p>
+  <div class="card"><p class="lead" style="margin:0">Ringkasnya: tiada akaun, tiada iklan, tiada penjejakan. Kiraan anda kekal dalam telefon anda. Yang keluar dari telefon hanyalah lokasi anggaran anda (untuk mencari zon waktu solat), dan statistik anda ke Home Assistant anda sendiri, itu pun hanya jika anda menetapkannya.</p></div>
+  <h3>Data dalam telefon</h3>
+  <p>Kiraan zikir, sesi, rutin, sasaran dan tetapan disimpan dalam storan peribadi aplikasi di telefon anda. Pembangun tidak menerimanya. Ia dipadam apabila aplikasi dinyahpasang, atau melalui Settings → Advanced → Delete all sessions. Fail sandaran disimpan di tempat yang <strong>anda</strong> pilih. Wirid tidak memuat naiknya sendiri.</p>
+  <h3>Lokasi</h3>
+  <p>Jika dibenarkan, Wirid membaca lokasi <strong>anggaran</strong> apabila aplikasi dibuka dan menghantar koordinat ke waktusolat.app (perkhidmatan waktu solat pihak ketiga) untuk mencari zon JAKIM anda. Wirid tidak menggunakan lokasi tepat dan tidak menjejak lokasi di latar belakang. Anda boleh mematikannya atau memilih zon sendiri.</p>
+  <h3>Perkhidmatan Accessibility</h3>
+  <p>Digunakan hanya untuk menerima tekanan butang remote Bluetooth anda, dan butang volume telefon jika anda menghidupkan pilihan itu, supaya boleh mengira ketika skrin tertutup. Ia <strong>tidak</strong> membaca skrin, kandungan aplikasi lain atau apa yang anda taip, dan tidak mengumpul atau menghantar apa-apa. Wirid meminta persetujuan anda pada skrin berasingan sebelum ia dihidupkan.</p>
+  <h3>Home Assistant (pilihan)</h3>
+  <p>Jika anda memasukkan alamat webhook Home Assistant, Wirid menghantar <strong>statistik</strong> (jumlah setiap zikir, mengikut waktu dan tempoh, rekod istiqamah, 14 hari terakhir, versi aplikasi) ke alamat itu sahaja, tanpa lokasi atau nama. Alamat <code>http://</code> biasa tidak disulitkan.</p>
+  <h3>Kanak-kanak, perubahan dan hubungan</h3>
+  <p>Wirid tidak ditujukan kepada kanak-kanak bawah 13 tahun. Sebarang perubahan dasar akan disiarkan di halaman ini. Hubungi: <a href="mailto:salihin.utem@gmail.com">salihin.utem@gmail.com</a>.</p>
+</main>
+</body>
+</html>
