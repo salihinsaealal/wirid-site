@@ -16,13 +16,14 @@
 
   <h2>What stays on your phone</h2>
   <p>Your dhikr counts, sessions, routines, goals and settings are stored in the app's private storage on your phone. The developer never receives them. Uninstalling the app deletes them. Settings → Advanced → Delete all sessions deletes them too.</p>
+  <p>If Android's own backup is on (Settings → Google → Backup), Android may include Wirid's counts and settings in your Google account's backup and restore them on a new phone. That backup is managed by Google under your account, not by Wirid. Wirid's key log and your Accessibility agreement are never included.</p>
   <p>Backups (Settings → Advanced → Back up data) are a file saved to a place <strong>you</strong> choose, such as your phone's storage or Google Drive. Wirid does not upload them anywhere itself.</p>
 
   <h2>Location</h2>
   <p>If you allow location, Wirid reads your <strong>approximate</strong> location when you open the app and sends the coordinates to <a href="https://waktusolat.app">waktusolat.app</a>, a third-party prayer-time service, to find your JAKIM prayer zone. It then downloads that zone's prayer times. Wirid does not use precise location or track your location in the background. You can turn this off in Settings ("Find zone from location") or deny the permission and choose your zone by hand. Waktusolat.app's own privacy practices apply to the requests it receives.</p>
 
   <h2>Accessibility service</h2>
-  <p>Wirid's counting service uses Android's Accessibility API for one purpose: to receive the button presses of your Bluetooth remote, and the phone's volume buttons if you turn that option on, so it can count while the screen is off. It does <strong>not</strong> read the screen, the contents of other apps, or what you type. It collects nothing and sends nothing. Wirid asks for your agreement on a separate screen before you turn it on. You can turn it off any time in Android's Accessibility settings.</p>
+  <p>Wirid's counting service uses Android's Accessibility API for one purpose: to receive the button presses of your Bluetooth remote, and the phone's volume buttons if you turn that option on, so it can count while the screen is off. Every other key passes through untouched. It does <strong>not</strong> read the screen, the contents of other apps, or what you type. It collects nothing and sends nothing. Presses of those buttons may be kept in a small on-phone log for the Keypad setup &amp; test screen, which never leaves the phone unless you share it yourself. Wirid asks for your agreement on a separate screen before you turn it on. You can turn it off any time in Android's Accessibility settings.</p>
 
   <h2>Home Assistant (optional)</h2>
   <p>If you enter a Home Assistant webhook address in Settings → Home Assistant, Wirid sends your <strong>statistics</strong> to that address: totals per dhikr, per prayer time and per period, streaks, the last 14 days and the app version. It sends no location or names of people. This goes only to the server you choose, usually your own home server. If you enter a plain <code>http://</code> address, that data is not encrypted in transit. Remove the address to stop sending.</p>
@@ -55,7 +56,7 @@
   <p class="muted">Berkuat kuasa 10 November 2026</p>
   <div class="card"><p class="lead" style="margin:0">Ringkasnya: tiada akaun, tiada iklan, tiada penjejakan. Kiraan anda kekal dalam telefon anda. Yang keluar dari telefon hanyalah lokasi anggaran anda (untuk mencari zon waktu solat), dan statistik anda ke Home Assistant anda sendiri, itu pun hanya jika anda menetapkannya.</p></div>
   <h3>Data dalam telefon</h3>
-  <p>Kiraan zikir, sesi, rutin, sasaran dan tetapan disimpan dalam storan peribadi aplikasi di telefon anda. Pembangun tidak menerimanya. Ia dipadam apabila aplikasi dinyahpasang, atau melalui Settings → Advanced → Delete all sessions. Fail sandaran disimpan di tempat yang <strong>anda</strong> pilih. Wirid tidak memuat naiknya sendiri.</p>
+  <p>Kiraan zikir, sesi, rutin, sasaran dan tetapan disimpan dalam storan peribadi aplikasi di telefon anda. Pembangun tidak menerimanya. Ia dipadam apabila aplikasi dinyahpasang, atau melalui Settings → Advanced → Delete all sessions. Jika sandaran Android sendiri dihidupkan, Android mungkin menyimpan kiraan dan tetapan dalam sandaran akaun Google anda. Fail sandaran disimpan di tempat yang <strong>anda</strong> pilih. Wirid tidak memuat naiknya sendiri.</p>
   <h3>Lokasi</h3>
   <p>Jika dibenarkan, Wirid membaca lokasi <strong>anggaran</strong> apabila aplikasi dibuka dan menghantar koordinat ke waktusolat.app (perkhidmatan waktu solat pihak ketiga) untuk mencari zon JAKIM anda. Wirid tidak menggunakan lokasi tepat dan tidak menjejak lokasi di latar belakang. Anda boleh mematikannya atau memilih zon sendiri.</p>
   <h3>Perkhidmatan Accessibility</h3>
