@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test Wirid</title>
+<meta name="description" content="Help test Wirid, a remote tasbih counter for Android, before it opens to everyone on Google Play.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<style>
+  .steps { counter-reset: s; list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  .steps > li { counter-increment: s; display: flex; gap: 14px; align-items: flex-start; background: var(--card); border: 1px solid var(--edge); border-radius: 20px; padding: 16px 18px; }
+  .steps > li::before { content: counter(s); flex: none; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; color: #04210F; background: var(--emerald); }
+  .steps p { margin: 4px 0 0; }
+  .btn { display: inline-block; margin-top: 10px; padding: 10px 18px; border-radius: 999px; background: var(--emerald); color: #04210F; font-weight: 700; text-decoration: none; }
+  .btn.soon { background: rgba(255,255,255,0.08); color: var(--soft); pointer-events: none; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--gold); background: rgba(255,201,60,0.12); padding: 3px 10px; border-radius: 999px; }
+</style>
+</head>
+<body>
+<main>
+  <header><img src="icon.png" alt=""><h1>Help test Wirid</h1></header>
+  <p><span class="tag" id="state">Opening soon</span></p>
+  <p class="lead">Wirid is a tasbih counter for Android that works with a small Bluetooth remote: phone in your pocket, screen off. Before it can open to everyone on Google Play, Google needs at least 12 people to test it for 14 days. Thank you for helping!</p>
+  <nav><a href="#join">How to join</a><a href="#stay">14 days</a><a href="#feedback">Feedback</a><a href="#ms">Bahasa Melayu</a></nav>
+
+  <h2>What you need</h2>
+  <ul>
+    <li>An Android phone (Android 13 or newer) with the Google Play Store.</li>
+    <li>A Google account (the one your Play Store uses).</li>
+    <li>A Bluetooth remote is nice but not needed: you can tap the screen or use the phone's volume buttons. <a href="./#remote">Which remote?</a></li>
+  </ul>
+
+  <h2 id="join">How to join</h2>
+  <ol class="steps">
+    <li><div><strong>Join the testers group</strong> with the Google account your Play Store uses. Your email stays private to the group owner.
+      <p><a class="btn soon" id="group" href="#">Join the group (opening soon)</a></p></div></li>
+    <li><div><strong>Become a tester.</strong> Open the Play testing link and tap "Become a tester".
+      <p><a class="btn soon" id="optin" href="#">Become a tester (opening soon)</a></p></div></li>
+    <li><div><strong>Install Wirid</strong> from the Play Store link on that page. It can take a few minutes after you join before Play lets you install.</div></li>
+    <li><div><strong>Open Wirid and turn on the counting service</strong> when it asks. It explains what it does first. It only hears your remote's buttons and never reads your screen.</div></li>
+  </ol>
+
+  <div class="card gold">
+    <p><strong>Already have the Wirid APK from Salihin?</strong> Keep your counts: open it → Settings → Advanced → <strong>Back up data</strong>, uninstall it, install from Play (steps above), then Settings → Advanced → <strong>Restore from backup</strong>.</p>
+  </div>
+
+  <h2 id="stay">Please stay in for 14 days</h2>
+  <p>Google counts only testers who stay opted in for <strong>14 days in a row</strong>. Please keep Wirid installed, use it for your daily dhikr if you can, and don't leave the test before then. Leaving and joining again restarts your 14 days.</p>
+
+  <h2 id="feedback">Feedback</h2>
+  <p>Anything that feels wrong or confusing helps: a remote that doesn't work, prayer times for your zone, wording. You can reply in Play Store's feedback box (on Wirid's page, as a tester) or email <strong>salihin.utem@gmail.com</strong>. If your banking app complains about Wirid's counting service, please say which bank.</p>
+
+  <hr>
+  <h2 id="ms">Bahasa Melayu</h2>
+  <p class="lead">Bantu uji Wirid, tasbih digital untuk Android yang berfungsi dengan remote Bluetooth. Google memerlukan sekurang-kurangnya 12 penguji selama 14 hari sebelum ia dibuka kepada semua. Terima kasih!</p>
+  <ol class="steps">
+    <li><div><strong>Sertai kumpulan penguji</strong> dengan akaun Google yang digunakan oleh Play Store anda.
+      <p><a class="btn soon" id="group-ms" href="#">Sertai kumpulan (akan dibuka)</a></p></div></li>
+    <li><div><strong>Jadi penguji.</strong> Buka pautan ujian Play dan tekan "Become a tester".
+      <p><a class="btn soon" id="optin-ms" href="#">Jadi penguji (akan dibuka)</a></p></div></li>
+    <li><div><strong>Pasang Wirid</strong> dari pautan Play Store di halaman itu. Mungkin perlu tunggu beberapa minit.</div></li>
+    <li><div><strong>Buka Wirid dan hidupkan perkhidmatan mengira</strong> apabila diminta. Ia hanya mendengar butang remote anda dan tidak membaca skrin.</div></li>
+  </ol>
+  <div class="card gold"><p><strong>Sudah ada APK Wirid?</strong> Buka → Settings → Advanced → <strong>Back up data</strong>, nyahpasang, pasang dari Play, kemudian Settings → Advanced → <strong>Restore from backup</strong>.</p></div>
+  <p><strong>Sila kekal 14 hari berturut-turut.</strong> Keluar dan masuk semula akan memulakan semula kiraan 14 hari anda. Maklum balas: kotak maklum balas Play Store atau <strong>salihin.utem@gmail.com</strong>.</p>
+
+  <p class="muted" style="margin-top:40px"><a href="./">Back to Wirid</a> · <a href="privacy.html">Privacy</a></p>
+</main>
+</body>
+</html>
