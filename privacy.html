@@ -10,7 +10,7 @@
 <body>
 <main>
   <header><img src="icon.png" alt=""><h1>Privacy policy</h1></header>
-  <p class="muted">Wirid for Android · Effective 10 November 2026 · <a href="#ms">Bahasa Melayu</a> · <a href="./">Back to Wirid</a></p>
+  <p class="muted">Wirid for Android · Effective 10 November 2026 · Updated 19 November 2026 · <a href="#ms">Bahasa Melayu</a> · <a href="./">Back to Wirid</a></p>
 
   <div class="card"><p class="lead" style="margin:0">Short version: no account, no ads, no tracking. Your counts stay on your phone. The only things that leave it are your approximate location, sent to look up your prayer zone, and your statistics, sent to your own Home Assistant only if you set that up.</p></div>
 
@@ -21,6 +21,7 @@
 
   <h2>Location</h2>
   <p>If you allow location, Wirid reads your <strong>approximate</strong> location when you open the app and sends the coordinates to <a href="https://waktusolat.app">waktusolat.app</a>, a third-party prayer-time service, to find your JAKIM prayer zone. It then downloads that zone's prayer times. Wirid does not use precise location or track your location in the background. You can turn this off in Settings ("Find zone from location") or deny the permission and choose your zone by hand. Waktusolat.app's own privacy practices apply to the requests it receives.</p>
+  <p>Wirid also keeps that approximate location with each dhikr session, on your phone, to show the Insights "Places" map of where you do dhikr. The map is drawn on your phone; this location is not sent anywhere (it is only in backup files you make yourself).</p>
 
   <h2>Accessibility service</h2>
   <p>Wirid's counting service uses Android's Accessibility API for one purpose: to receive the button presses of your Bluetooth remote, and the phone's volume buttons if you turn that option on, so it can count while the screen is off. Every other key passes through untouched. It does <strong>not</strong> read the screen, the contents of other apps, or what you type. It collects nothing and sends nothing. Presses of those buttons may be kept in a small on-phone log for the Keypad setup &amp; test screen, which never leaves the phone unless you share it yourself. Wirid asks for your agreement on a separate screen before you turn it on. You can turn it off any time in Android's Accessibility settings.</p>
@@ -53,12 +54,13 @@
 
   <hr>
   <h2 id="ms">Dasar privasi (Bahasa Melayu)</h2>
-  <p class="muted">Berkuat kuasa 10 November 2026</p>
+  <p class="muted">Berkuat kuasa 10 November 2026 · Dikemas kini 19 November 2026</p>
   <div class="card"><p class="lead" style="margin:0">Ringkasnya: tiada akaun, tiada iklan, tiada penjejakan. Kiraan anda kekal dalam telefon anda. Yang keluar dari telefon hanyalah lokasi anggaran anda (untuk mencari zon waktu solat), dan statistik anda ke Home Assistant anda sendiri, itu pun hanya jika anda menetapkannya.</p></div>
   <h3>Data dalam telefon</h3>
   <p>Kiraan zikir, sesi, rutin, sasaran dan tetapan disimpan dalam storan peribadi aplikasi di telefon anda. Pembangun tidak menerimanya. Ia dipadam apabila aplikasi dinyahpasang, atau melalui Settings → Advanced → Delete all sessions. Jika sandaran Android sendiri dihidupkan, Android mungkin menyimpan kiraan dan tetapan dalam sandaran akaun Google anda. Fail sandaran disimpan di tempat yang <strong>anda</strong> pilih. Wirid tidak memuat naiknya sendiri.</p>
   <h3>Lokasi</h3>
   <p>Jika dibenarkan, Wirid membaca lokasi <strong>anggaran</strong> apabila aplikasi dibuka dan menghantar koordinat ke waktusolat.app (perkhidmatan waktu solat pihak ketiga) untuk mencari zon JAKIM anda. Wirid tidak menggunakan lokasi tepat dan tidak menjejak lokasi di latar belakang. Anda boleh mematikannya atau memilih zon sendiri.</p>
+  <p>Wirid juga menyimpan lokasi anggaran itu bersama setiap sesi zikir, dalam telefon anda, untuk peta "Places" dalam Insights. Peta dilukis dalam telefon; lokasi ini tidak dihantar ke mana-mana (hanya ada dalam fail sandaran yang anda buat sendiri).</p>
   <h3>Perkhidmatan Accessibility</h3>
   <p>Digunakan hanya untuk menerima tekanan butang remote Bluetooth anda, dan butang volume telefon jika anda menghidupkan pilihan itu, supaya boleh mengira ketika skrin tertutup. Ia <strong>tidak</strong> membaca skrin, kandungan aplikasi lain atau apa yang anda taip, dan tidak mengumpul atau menghantar apa-apa. Wirid meminta persetujuan anda pada skrin berasingan sebelum ia dihidupkan.</p>
   <h3>Home Assistant (pilihan)</h3>
